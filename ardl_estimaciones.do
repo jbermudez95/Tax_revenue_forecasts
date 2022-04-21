@@ -64,7 +64,7 @@ Servicio de Administracion de Rentas, Honduras
 				 graph export "$path\graph_1b.pdf", replace
 
 
-	* Prueba de raíz unitaria empleando Dolado et al (1990)
+	* Tabla 3. Prueba de raíz unitaria empleando Dolado et al (1990)
 	varsoc ln_imae_sa, exog(tiempo)                
 	dfuller ln_imae_sa, lags(3) trend reg
 	dfuller ln_imae_sa, lags(3) reg
@@ -187,7 +187,7 @@ Servicio de Administracion de Rentas, Honduras
 		mat forecast_h1 = nullmat(forecast_h1) \ (r(rmse), r(mae), r(mape), r(theilu))
 	}
 	
-	* Tabla 3
+	* Tabla 5
 	frmttable using "$path/fcst_h1", replace tex statmat(forecast_h1) ctitle("Modelo", "RECM", "EAM", "EPAM", "Theil") fr basefont(tiny) sd(4,4,4,4) ///
 			  rtitles("AR(3)"\"MA(8)"\"ARMA(3,3)"\"ARMAX (2,1)"\"ARMAX (1,1)"\"ARDL (1,1,1)"\"ARDL (1,1,2)"\"ARDL (2,2,1)"\"ARDL (2,2,2)"\"ARDL (3,3,1)"\"ARDL (3,3,2)")	          
 	
@@ -292,7 +292,7 @@ Servicio de Administracion de Rentas, Honduras
 		mat forecast_h3 = nullmat(forecast_h3) \ (r(rmse), r(mae), r(mape), r(theilu))
 	}
 	
-		* Tabla 4
+		* Tabla 6
 	frmttable using "$path/fcst_h3", replace tex statmat(forecast_h3) ctitle("Modelo", "RECM", "EAM", "EPAM", "Theil") fr basefont(tiny) sd(4,4,4,4) ///
 			  rtitles("AR(3)"\"MA(8)"\"ARMA(3,3)"\"ARIMAX (2,1,1)"\"ARIMAX (1,1,1)"\"ARDL (1,1,1)"\"ARDL (1,1,2)"\"ARDL (2,2,1)"\"ARDL (2,2,2)"\"ARDL (3,3,1)"\"ARDL (3,3,2)")	          
 
@@ -387,7 +387,7 @@ Servicio de Administracion de Rentas, Honduras
 		mat forecast_h6 = nullmat(forecast_h6) \ (r(rmse), r(mae), r(mape), r(theilu))
 	}
 	
-	* Tabla 5
+	* Tabla 7
 	frmttable using "$path/fcst_h6", replace tex statmat(forecast_h6) ctitle("Modelo", "RECM", "EAM", "EPAM", "Theil") fr basefont(tiny) sd(4,4,4,4) ///
 			  rtitles("AR(3)"\"MA(8)"\"ARMA(3,3)"\"ARIMAX (2,1,1)"\"ARIMAX (1,1,1)"\"ARDL (1,1,1)"\"ARDL (1,1,2)"\"ARDL (2,2,1)"\"ARDL (2,2,2)"\"ARDL (3,3,1)"\"ARDL (3,3,2)")	          
 
@@ -482,7 +482,7 @@ Servicio de Administracion de Rentas, Honduras
 		mat forecast_h12 = nullmat(forecast_h12) \ (r(rmse), r(mae), r(mape), r(theilu))
 	}
 	
-	* Tabla 6
+	* Tabla 8
 	frmttable using "$path/fcst_h12", replace tex statmat(forecast_h12) ctitle("Modelo", "RECM", "EAM", "EPAM", "Theil") fr basefont(tiny) sd(4,4,4,4) ///
 			  rtitles("AR(3)"\"MA(8)"\"ARMA(3,3)"\"ARIMAX (2,1,1)"\"ARDL (1,1,1)"\"ARDL (1,1,2)"\"ARDL (2,2,1)"\"ARDL (2,2,2)"\"ARDL (3,3,1)"\"ARDL (3,3,2)")	          
 
