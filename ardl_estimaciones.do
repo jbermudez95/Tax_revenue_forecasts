@@ -37,7 +37,7 @@ Servicio de Administracion de Rentas, Honduras
 	}
 
 
-	* Rolling Correlations
+	* Gráfico 1. Rolling Correlations
 	set seed 2000
 	
 	mvcorr ln_itrib_sa ln_imae_sa, win(12) gen(rho1) 
